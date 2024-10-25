@@ -174,37 +174,44 @@ class hello extends StatelessWidget {
                 ),
                 ),
               ),
-              Expanded(child: Container()),
-              Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                color: Color.fromARGB(185, 105, 186, 253),
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
+              // Expanded(child: Container()),
+              SizedBox(height: 90,),
 
-                ),
-                
-                child: Padding(
-                  padding: const EdgeInsets.all(15.0),
+              Expanded(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
                   child: Container(
                     width: double.infinity,
-                    height: 400,
-
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 28.0,bottom: 20),
-                          child: Text("Welcome To My App", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                    decoration: BoxDecoration(
+                    color: Color.fromARGB(185, 105, 186, 253),
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
+                  
+                    ),
+                    
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 400,
+                  
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 28.0,bottom: 20),
+                              child: Text("Welcome To My App", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                            ),
+                            Text("Welcome to our app! We’re thrilled to have you here. This section is designed to guide you through all our features and help you maximize your experience. Whether you're seeking resources, support, or simply looking to explore, we’re here to assist you at every step. Dive in, and enjoy your journey with us! We hope you find everything you need and feel empowered to make the most of our platform. Your feedback is invaluable, so don’t hesitate to reach out with any questions or suggestions. Happy exploring!", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
+                            
+                            ElevatedButton(onPressed: (){
+                  
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>menuBtn()));
+                  
+                            }, child: Text("Let's Explore",style: TextStyle(color: Colors.blue),)),
+                          ],
                         ),
-                        Text("Welcome to our app! We’re thrilled to have you here. This section is designed to guide you through all our features and help you maximize your experience. Whether you're seeking resources, support, or simply looking to explore, we’re here to assist you at every step. Dive in, and enjoy your journey with us! We hope you find everything you need and feel empowered to make the most of our platform. Your feedback is invaluable, so don’t hesitate to reach out with any questions or suggestions. Happy exploring!", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
-                       
-                        ElevatedButton(onPressed: (){
-
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>menuBtn()));
-
-                        }, child: Text("Let's Explore",style: TextStyle(color: Colors.blue),)),
-                      ],
+                      ),
                     ),
                   ),
                 ),

@@ -173,43 +173,49 @@ class hobbies extends StatelessWidget {
                 ),
                 ),
               ),
-              Expanded(child: Container()),
-              Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                color: Color.fromARGB(185, 105, 186, 253),
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
-
-                ),
-                
-                child: Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0),
-                        child: Text("Listening Music", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
-                      ),
-                      Text("One of my favorite hobbies is listening to music. It allows me to unwind and escape into different emotions and experiences. Whether it’s the soothing melodies of classical music or the energetic beats of pop, each genre brings something unique, enriching my life and providing constant inspiration and joy.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w300),),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0),
-                        child: Text("UI/UX Design", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
-                      ),
-                      Text("UI/UX design is a hobby I enjoy. I’m passionate about creating user-friendly interfaces that enhance interactions and inspire innovative solutions.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w300),),
-                     
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0),
-                        child: Text("Playing Games", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 5.0),
-                        child: Text("Playing online games is one of my favorite hobbies. I enjoy the excitement of competition and the chance to connect with friends while exploring immersive virtual worlds. It’s a great way to unwind, challenge myself, and experience teamwork in a fun, engaging environment.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400), ),
-                      ),
-                     
+              // Expanded(child: Container()),
+              Expanded(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                    color: Color.fromARGB(185, 105, 186, 253),
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
                   
-                    ],
+                    ),
+                    
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: Text("Listening Music", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                          ),
+                          Text("One of my favorite hobbies is listening to music. It allows me to unwind and escape into different emotions and experiences. Whether it’s the soothing melodies of classical music or the energetic beats of pop, each genre brings something unique, enriching my life and providing constant inspiration and joy.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w300),),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: Text("UI/UX Design", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                          ),
+                          Text("UI/UX design is a hobby I enjoy. I’m passionate about creating user-friendly interfaces that enhance interactions and inspire innovative solutions.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w300),),
+                         
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: Text("Playing Games", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 5.0),
+                            child: Text("Playing online games is one of my favorite hobbies. I enjoy the excitement of competition and the chance to connect with friends while exploring immersive virtual worlds. It’s a great way to unwind, challenge myself, and experience teamwork in a fun, engaging environment.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400), ),
+                          ),
+                
+                         
+                      
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ),

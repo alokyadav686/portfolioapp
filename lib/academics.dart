@@ -173,44 +173,52 @@ class academics extends StatelessWidget {
                 ),
                 ),
               ),
-              Expanded(child: Container()),
-              Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                color: Color.fromARGB(185, 105, 186, 253),
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
+              // Expanded(child: Container()),
+              SizedBox(height: 100,),
 
-                ),
-                
-                child: Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 28.0),
-                        child: Text("Present", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
-                      ),
-                      Text("Bachelor of Technology (2023-27)", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
-                      Text("(Computer Science & Information Technology)",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w300),),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0,bottom: 4),
-                        child: Text("Intermediate", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
-                      ),
-                      Text("I completed my schooling at K B S S +2 School, where I achieved a remarkable score of 92% in my 12th Board exams.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
-                      
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0,bottom: 10),
-                        child: Text("High School", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 30.0),
-                        child: Text("I completed my schooling at SPPS, where I achieved solid academic results.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400), ),
-                      ),
-                     
+              Expanded(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                    color: Color.fromARGB(185, 105, 186, 253),
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
                   
-                    ],
+                    ),
+                    
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 28.0),
+                            child: Text("Present", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                          ),
+                          Text("Bachelor of Technology (2023-27)", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
+                          Text("(Computer Science & Information Technology)",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w300),),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0,bottom: 4),
+                            child: Text("Intermediate", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                          ),
+                          Text("I completed my schooling at K B S S +2 School, where I achieved a remarkable score of 92% in my 12th Board exams.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
+                          
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0,bottom: 10),
+                            child: Text("High School", style: TextStyle(fontSize: 28,fontWeight: FontWeight.w700),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 30.0),
+                            child: Text("I completed my schooling at SPPS, where I achieved solid academic results.", style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400), ),
+                          ),
+                         
+                         
+                      
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ),

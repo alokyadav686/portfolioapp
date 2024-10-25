@@ -7,13 +7,15 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:myapp/introPage.dart';
 import 'package:myapp/menuBtn.dart';
+import 'package:myapp/splashscreen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main(){
 
 runApp(MaterialApp(
-  home: Home(),
+  home: splashscreen(),
 debugShowCheckedModeBanner: false,
+
 
 ));
 
@@ -25,6 +27,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      // home: splashscreen(),
+
       body: Container(
         width: double.infinity,
         
