@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:myapp/academics.dart';
 import 'package:myapp/introPage.dart';
 import 'package:myapp/menuBtn.dart';
 import 'package:myapp/splashscreen.dart';
@@ -50,9 +51,9 @@ class Home extends StatelessWidget {
             children: [
           
               Padding(
-                padding: const EdgeInsets.only(top: 50),
+                padding: const EdgeInsets.only(top: 15),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 15.0,right: 15),
+                  padding: const EdgeInsets.only(left: 5.0,right: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -142,62 +143,72 @@ class Home extends StatelessWidget {
                                     children: [
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
-                                        child: Container(
-                                          width: 150,
-                                          height: 150,
-                                          decoration: BoxDecoration(
-                                            color: Colors.blue,
-                                            borderRadius: BorderRadius.circular(30),
-                                            boxShadow: [
-                                                       BoxShadow(
-                                                          color: const Color.fromARGB(255, 0, 58, 105).withOpacity(0.4),
-                                                         offset: Offset(0, 3), 
-                                                          blurRadius: 7,      
-                                                         spreadRadius: 2,     
-                                                       ),
-                                                      ],
-
-                                          ),
-                                            child: Column(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              crossAxisAlignment: CrossAxisAlignment.center,
-                                              children: [
-                                                Icon(Icons.work,color: Colors.white60,size: 30,),
-                                                Text("Know",style: TextStyle(fontSize: 18,)),
-                                                Text("My Work",style: TextStyle(fontSize: 18,)),
-                                              ],
-                                            ),
+                                        child: InkWell(
+                                          onTap: () {
+                                              Navigator.push(context, MaterialPageRoute(builder: (context)=>menuBtn()));
+                                          },
+                                          child: Container(
+                                            width: 150,
+                                            height: 150,
+                                            decoration: BoxDecoration(
+                                              color: Colors.blue,
+                                              borderRadius: BorderRadius.circular(300),
+                                              boxShadow: [
+                                                         BoxShadow(
+                                                            color: const Color.fromARGB(255, 0, 58, 105).withOpacity(0.4),
+                                                           offset: Offset(0, 3), 
+                                                            blurRadius: 7,      
+                                                           spreadRadius: 2,     
+                                                         ),
+                                                        ],
                                           
+                                            ),
+                                              child: Column(
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                children: [
+                                                  Icon(Icons.work,color: Colors.white60,size: 30,),
+                                                  Text("Know",style: TextStyle(fontSize: 18,)),
+                                                  Text("My Work",style: TextStyle(fontSize: 18,)),
+                                                ],
+                                              ),
+                                            
+                                          ),
                                         ),
                                       ),
                                        Padding(
                                          padding: const EdgeInsets.all(10.0),
-                                         child: Container(
-                                          width: 150,
-                                          height: 150,
-                                          decoration: BoxDecoration(
-                                            color: Colors.blue,
-                                            borderRadius: BorderRadius.circular(30),
-                                             boxShadow: [
-                                                       BoxShadow(
-                                                          color: const Color.fromARGB(255, 0, 58, 105).withOpacity(0.4),
-                                                         offset: Offset(0, 3), 
-                                                          blurRadius: 7,      
-                                                         spreadRadius: 2,     
-                                                       ),
-                                                      ],
-                                          ),
-                                            child: Column(
-                                               mainAxisAlignment: MainAxisAlignment.center,
-                                              crossAxisAlignment: CrossAxisAlignment.center,
-                                              children: [
-                                                Icon(Icons.account_box, color: Colors.white60,size: 30  ,),
-                                                Text("About",style: TextStyle(fontSize: 18,)),
-                                                Text("Me",style: TextStyle(fontSize: 18,)),
-                                              ],
+                                         child: InkWell(
+                                          onTap: () {
+                                            Navigator.push(context, MaterialPageRoute(builder: (context)=>academics()));
+                                          },
+                                           child: Container(
+                                            width: 150,
+                                            height: 150,
+                                            decoration: BoxDecoration(
+                                              color: Colors.blue,
+                                              borderRadius: BorderRadius.circular(300),
+                                               boxShadow: [
+                                                         BoxShadow(
+                                                            color: const Color.fromARGB(255, 0, 58, 105).withOpacity(0.4),
+                                                           offset: Offset(0, 3), 
+                                                            blurRadius: 7,      
+                                                           spreadRadius: 2,     
+                                                         ),
+                                                        ],
                                             ),
-                                          
-                                                                                 ),
+                                              child: Column(
+                                                 mainAxisAlignment: MainAxisAlignment.center,
+                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                children: [
+                                                  Icon(Icons.account_box, color: Colors.white60,size: 30  ,),
+                                                  Text("About",style: TextStyle(fontSize: 18,)),
+                                                  Text("Me",style: TextStyle(fontSize: 18,)),
+                                                ],
+                                              ),
+                                            
+                                                                                   ),
+                                         ),
                                        ),
                                        Padding(
                                          padding: const EdgeInsets.all(8.0),
@@ -206,7 +217,7 @@ class Home extends StatelessWidget {
                                           height: 150,
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
-                                            borderRadius: BorderRadius.circular(30),
+                                            borderRadius: BorderRadius.circular(300),
                                              boxShadow: [
                                                        BoxShadow(
                                                           color: const Color.fromARGB(255, 0, 58, 105).withOpacity(0.4),
