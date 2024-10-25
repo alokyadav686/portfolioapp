@@ -68,8 +68,8 @@ class hobbies extends StatelessWidget {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>hello()));
                             },
                             child: Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                              
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -96,8 +96,8 @@ class hobbies extends StatelessWidget {
                               // Navigator.push(context, MaterialPageRoute(builder: (context)=>menuBtn()));
                             },
                             child: Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                              
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -124,8 +124,8 @@ class hobbies extends StatelessWidget {
                               
                             },
                             child: Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                              
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -151,8 +151,8 @@ class hobbies extends StatelessWidget {
                               // Navigator.push(context, MaterialPageRoute(builder: (context)=>hobbies()));
                             },
                             child: Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                              
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -217,7 +217,7 @@ class hobbies extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
+                )
               ),
               
           ],

@@ -70,8 +70,8 @@ class menuBtn extends StatelessWidget {
                             child: SingleChildScrollView(
                               scrollDirection: Axis.vertical,
                               child: Container(
-                                width: 100,
-                                height: 100,
+                                width: 60,
+                                height: 60,
                                
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
@@ -98,8 +98,8 @@ class menuBtn extends StatelessWidget {
                               // Navigator.push(context, MaterialPageRoute(builder: (context)=>menuBtn()));
                             },
                             child: Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                              
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -127,8 +127,8 @@ class menuBtn extends StatelessWidget {
                               
                             },
                             child: Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                              
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -154,8 +154,8 @@ class menuBtn extends StatelessWidget {
                               Navigator.push(context, MaterialPageRoute(builder: (context)=>hobbies()));
                             },
                             child: Container(
-                              width: 100,
-                              height: 100,
+                              width: 60,
+                              height: 60,
                              
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
